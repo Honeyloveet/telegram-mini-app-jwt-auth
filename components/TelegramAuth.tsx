@@ -59,7 +59,7 @@ export default function TelegramAuth() {
           </button>
         </>
       ) : (
-        <div>
+        <>
           <p>You need to be an owner of this account</p>
           <button
             onClick={authenticateUser}
@@ -67,7 +67,7 @@ export default function TelegramAuth() {
           >
             Authenticate
           </button>
-        </div>
+        </>
       )}
     </div>
   );
