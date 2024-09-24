@@ -8,6 +8,7 @@ export async function middleware(request: NextRequest) {
     console.log("Session: ", session);
 
     if (!session) {
+      // console.log("No Session");
       return NextResponse.redirect(new URL("/", request.url));
     }
   }
